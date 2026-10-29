@@ -16,7 +16,7 @@
 
 | <sub>01</sub> **[ExMachina](https://github.com/ExMachina-Project/ExMachina)** | <sub>02</sub> **[ExMachina-Prompts](https://github.com/ExMachina-Project/ExMachina-Prompts)** | <sub>03</sub> **[DSH-ExMachina](https://github.com/ExMachina-Project/DSH-ExMachina)** |
 | :-- | :-- | :-- |
-| 轻任务直答，重任务扩编成 40 个智能体。<br><br>`RUST` `TAURI` `40 AGENTS` | 理性协议压成纯提示词，九平台即插即用。<br><br>`PROMPT ONLY` `28 ROLES` `9 PLATFORMS` | DSH 预设：指挥体编排，子代理执行。<br><br>`PRESET` `6 SKILLS` |
+| 以集体智能与集群协作为核心的智能体系统。<br><br>`RUST` `TAURI` `40 AGENTS` | 理性协议压成纯提示词，九平台即插即用。<br><br>`PROMPT ONLY` `28 ROLES` `9 PLATFORMS` | DSH 预设：指挥体编排，子代理执行。<br><br>`PRESET` `6 SKILLS` |
 
 ## 编成
 
