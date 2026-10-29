@@ -20,15 +20,15 @@
 
 ## 编成
 
-<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/main/profile/assets/swarm.svg" width="100%" alt="ExMachina 集群编成：1 指挥体 + 39 子个体">
+<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/data/profile/assets/swarm.svg" width="100%" alt="ExMachina 集群编成：指挥体与子个体名册">
 
 ## 数据
 
-<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/main/profile/assets/snapshot.svg" width="100%" alt="数据快照：53,143 行 Rust · 40 智能体 · 14 协议 · 22 剧本 · 9 技能 · 395 文件 · 3 crate · 16 视图 · 8 发行 · 39 提交">
+<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/data/profile/assets/snapshot.svg" width="100%" alt="数据快照：代码量、编成、协议、剧本、技能、发行与提交">
 
-<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/main/profile/assets/language.svg" width="100%" alt="语言构成：Rust 68.6% · TypeScript 17.9% · JavaScript 6.4% · CSS 5.5%">
+<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/data/profile/assets/language.svg" width="100%" alt="语言构成">
 
-<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/main/profile/assets/activity.svg" width="100%" alt="提交速度：2026 年 9–10 月 24 次提交、8 个发行版">
+<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/data/profile/assets/activity.svg" width="100%" alt="提交速度：累计提交曲线与发行节点">
 
 ## 贡献者
 

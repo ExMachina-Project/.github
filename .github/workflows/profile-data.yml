@@ -1,0 +1,72 @@
+name: Update profile data
+
+# 每天重算组织主页的数据面板，产物推送到独立的 data 分支，main 永远不被机器人提交。
+#
+# 分支约定：
+#   main  —— 手写资产（hero.svg）、README、生成脚本、本工作流
+#   data  —— 纯构建产物（snapshot / swarm / language / activity 四张 SVG），
+#            每次强制推送，只保留一个提交
+#
+# README 里四张数据面板指向 data 分支的 raw 地址，所以机器人提交不会污染 main。
+
+on:
+  schedule:
+    - cron: "23 3 * * *"        # 每天 03:23 UTC（北京时间 11:23）
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/profile-data.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-data
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Checkout ExMachina source
+        uses: actions/checkout@v4
+        with:
+          repository: ExMachina-Project/ExMachina
+          path: .exm-src
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate panels
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: |
+          python scripts/gen_profile_assets.py \
+            --src .exm-src \
+            --out "$RUNNER_TEMP/assets"
+
+      - name: Publish to data branch
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 孤立分支：不带 main 的任何历史，只放生成物
+          git checkout --orphan data-build
+          git rm -rf . >/dev/null 2>&1 || true
+          rm -rf profile
+          mkdir -p profile/assets
+          cp "$RUNNER_TEMP"/assets/*.svg profile/assets/
+
+          git add -f profile/assets
+          git commit -m "chore: 更新数据面板（$(date -u +%Y-%m-%d)）"
+          git push --force origin HEAD:data
