@@ -40,6 +40,6 @@
 
 <div align="center">
 
-<sub>[全部仓库](https://github.com/orgs/ExMachina-Project/repositories) · MIT · 2026</sub>
+**智械计划 · ExMachina-Project** © 2026
 
 </div>
