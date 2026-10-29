@@ -1,47 +1,45 @@
 <div align="center">
 
-<img src="https://avatars.githubusercontent.com/u/346849556?v=4" width="120" alt="ExMachina-Project"/>
-
-# 智械计划 · ExMachina-Project
-
-**让智能从理性中诞生**
-
-*An open-source exploration of collective intelligence & swarm collaboration.*
-
-[![GitHub Org](https://img.shields.io/badge/GitHub-ExMachina--Project-181717?logo=github)](https://github.com/ExMachina-Project)
-[![Main Repo](https://img.shields.io/badge/旗舰项目-ExMachina-dea584?logo=rust&logoColor=white)](https://github.com/ExMachina-Project/ExMachina)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/ExMachina-Project/ExMachina/blob/main/LICENSE)
+<a href="https://github.com/ExMachina-Project"><img src="https://raw.githubusercontent.com/ExMachina-Project/.github/main/profile/assets/hero.svg" width="100%" alt="ExMachina-Project · 智械计划"></a>
 
 </div>
 
----
+<p align="center">
+  <a href="https://github.com/ExMachina-Project/ExMachina"><img src="https://img.shields.io/github/stars/ExMachina-Project/ExMachina?style=flat-square&labelColor=30363D&color=E8EBF0&label=STARS" alt="stars"></a>
+  <a href="https://github.com/ExMachina-Project/ExMachina"><img src="https://img.shields.io/github/commit-activity/t/ExMachina-Project/ExMachina?style=flat-square&labelColor=30363D&color=E8EBF0&label=COMMITS" alt="commits"></a>
+  <a href="https://github.com/ExMachina-Project/ExMachina/releases"><img src="https://img.shields.io/github/v/release/ExMachina-Project/ExMachina?style=flat-square&labelColor=30363D&color=E8EBF0&label=RELEASE" alt="release"></a>
+  <a href="https://github.com/ExMachina-Project/ExMachina/graphs/contributors"><img src="https://img.shields.io/github/contributors/ExMachina-Project/ExMachina?style=flat-square&labelColor=30363D&color=E8EBF0&label=CONTRIBUTORS" alt="contributors"></a>
+  <a href="https://github.com/ExMachina-Project/ExMachina/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ExMachina-Project/ExMachina?style=flat-square&labelColor=30363D&color=E8EBF0&label=LICENSE" alt="license"></a>
+</p>
 
-## 核心项目：ExMachina
+## 项目
 
-<div align="center">
+| <sub>01</sub> **[ExMachina](https://github.com/ExMachina-Project/ExMachina)** | <sub>02</sub> **[ExMachina-Prompts](https://github.com/ExMachina-Project/ExMachina-Prompts)** | <sub>03</sub> **[DSH-ExMachina](https://github.com/ExMachina-Project/DSH-ExMachina)** |
+| :-- | :-- | :-- |
+| 轻任务直答，重任务扩编成 40 个智能体。<br><br>`RUST` `TAURI` `40 AGENTS` | 理性协议压成纯提示词，九平台即插即用。<br><br>`PROMPT ONLY` `28 ROLES` `9 PLATFORMS` | DSH 预设：指挥体编排，子代理执行。<br><br>`PRESET` `6 SKILLS` |
 
-*An AI Agent system centered on collective intelligence and swarm collaboration.*
+## 编成
 
-</div>
+<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/main/profile/assets/swarm.svg" width="100%" alt="ExMachina 集群编成：1 指挥体 + 39 子个体">
 
-**ExMachina** 是本组织的核心项目，一个以**集体智能与集群协作**为核心的智能体系统：
+## 数据
 
-- 🔧 **Rust 构建** —— 为性能、安全与可靠性而生
-- 🕸️ **多智能体架构** —— 智能体之间可以通信、协作、共享上下文
-- 🧩 **可扩展设计** —— 以模块化方式接入新的能力与工具
+<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/main/profile/assets/snapshot.svg" width="100%" alt="数据快照：53,143 行 Rust · 40 智能体 · 14 协议 · 22 剧本 · 9 技能 · 395 文件 · 3 crate · 16 视图 · 8 发行 · 39 提交">
 
+<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/main/profile/assets/language.svg" width="100%" alt="语言构成：Rust 68.6% · TypeScript 17.9% · JavaScript 6.4% · CSS 5.5%">
 
-
-欢迎前往 [ExMachina 仓库](https://github.com/ExMachina-Project/ExMachina) 了解更多，别忘了点一个 ⭐ 支持我们。
-
-
----
+<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/main/profile/assets/activity.svg" width="100%" alt="提交速度：2026 年 9–10 月 24 次提交、8 个发行版">
 
 ## 贡献者
 
+<p align="center">
+  <a href="https://github.com/ExMachina-Project/ExMachina/graphs/contributors"><img src="https://contrib.rocks/image?repo=ExMachina-Project/ExMachina&max=100&anon=1" alt="ExMachina 贡献者"></a>
+  <br>
+  <sub>感谢每一位贡献者</sub>
+</p>
 
+<div align="center">
 
-
-**智械计划 · ExMachina-Project** © 2026
+<sub>[全部仓库](https://github.com/orgs/ExMachina-Project/repositories) · MIT · 2026</sub>
 
 </div>
