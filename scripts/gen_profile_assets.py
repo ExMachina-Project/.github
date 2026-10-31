@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""重新生成组织主页的数据面板（snapshot / language / activity / swarm）。
+"""重新生成组织主页的数据面板（snapshot / language / activity）。
 
 数据来源：
-  · 结构类指标（LOC / 文件数 / 编成 / 协议 / 剧本 / 技能 / 视图 / crate）
+  · 结构类指标（LOC / 文件数 / 智能体 / 协议 / 剧本 / 技能 / 视图 / crate）
     —— 直接扫描 ExMachina 源码检出目录；
   · 发行版 / 提交 / 语言字节
     —— GitHub REST API（用 GITHUB_TOKEN 认证）。
@@ -232,43 +232,6 @@ def build_snapshot(stats: dict, release_count: int, commit_count: int, today: dt
     return "".join(s)
 
 
-# ------------------------------------------------------------------ swarm
-def build_swarm(agents: list[str]) -> str:
-    names = [a[:-6] if a.endswith("-agent") else a for a in agents]
-    names.sort(key=lambda n: (n != "orchestrator", n))
-
-    cols = 5
-    rows = max(1, math.ceil(len(names) / cols))
-    w, h = W, 100 + 32 * rows
-    hot_idx = next((i for i, n in enumerate(names) if n == "orchestrator"), -1)
-    right = (f"1 ORCHESTRATOR + {len(names) - 1} UNITS" if hot_idx >= 0
-             else f"{len(names)} UNITS")
-
-    s = [head(w, h, label="Swarm manifest"), grid(w, h)]
-    s.append(panel_header("// SWARM MANIFEST", right))
-
-    colw = (R - L) / cols
-    top, step = 100, 32
-    for k in range(1, cols):
-        x = L + colw * k
-        s.append(f'<line x1="{x:.1f}" y1="78" x2="{x:.1f}" y2="{h-28}" stroke="#FFFFFF" stroke-opacity="0.05"/>')
-
-    for i, name in enumerate(names):
-        c, r = i % cols, i // cols
-        x = L + colw * c + 14
-        y = top + step * r
-        hot = (i == hot_idx)
-        s.append(f'<text x="{x}" y="{y}" font-family="{MONO}" font-size="8" letter-spacing="1.4" '
-                 f'fill="{ACCENT if hot else INK3}">{i+1:02d}</text>')
-        s.append(f'<text x="{x+25}" y="{y}" font-family="{MONO}" font-size="11" '
-                 f'fill="{ACCENT2 if hot else INK2}">{name}</text>')
-        if r < rows - 1:
-            s.append(f'<line x1="{x-14}" y1="{y+10}" x2="{x+colw-28}" y2="{y+10}" '
-                     f'stroke="#FFFFFF" stroke-opacity="0.035"/>')
-    s.append('</svg>')
-    return "".join(s)
-
-
 # ------------------------------------------------------------------ language
 def build_language(langs: dict[str, int]) -> str | None:
     if not langs:
@@ -424,7 +387,7 @@ def main() -> int:
     stats = scan_source(src)
     print("结构指标:", json.dumps({k: v for k, v in stats.items() if k != "agents"},
                                 ensure_ascii=False))
-    print(f"编成: {len(stats['agents'])} 个")
+    print(f"智能体: {len(stats['agents'])} 个")
 
     rel = releases(FLAGSHIP)
     print(f"发行版: {len(rel)} 个")
@@ -440,7 +403,6 @@ def main() -> int:
     written = []
     targets = {
         "snapshot.svg": build_snapshot(stats, len(rel), len(all_dates), today),
-        "swarm.svg": build_swarm(stats["agents"]),
         "language.svg": build_language(langs),
         "activity.svg": build_activity(all_dates, rel, today),
     }

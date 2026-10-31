@@ -18,13 +18,9 @@
 | :-- | :-- | :-- |
 | 以集体智能与集群协作为核心的智能体系统。<br><br>`RUST` `TAURI` `40 AGENTS` | 理性协议压成纯提示词，九平台即插即用。<br><br>`PROMPT ONLY` `28 ROLES` `9 PLATFORMS` | DSH 预设：指挥体编排，子代理执行。<br><br>`PRESET` `6 SKILLS` |
 
-## 编成
-
-<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/data/profile/assets/swarm.svg" width="100%" alt="ExMachina 集群编成：指挥体与子个体名册">
-
 ## 数据
 
-<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/data/profile/assets/snapshot.svg" width="100%" alt="数据快照：代码量、编成、协议、剧本、技能、发行与提交">
+<img src="https://raw.githubusercontent.com/ExMachina-Project/.github/data/profile/assets/snapshot.svg" width="100%" alt="数据快照：代码量、智能体、协议、剧本、技能、发行与提交">
 
 <img src="https://raw.githubusercontent.com/ExMachina-Project/.github/data/profile/assets/language.svg" width="100%" alt="语言构成">
 
