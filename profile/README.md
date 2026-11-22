@@ -14,9 +14,9 @@
 
 ## 项目
 
-| <sub>01</sub> **[ExMachina](https://github.com/ExMachina-Project/ExMachina)** | <sub>02</sub> **[ExMachina-Prompts](https://github.com/ExMachina-Project/ExMachina-Prompts)** | <sub>03</sub> **[DSH-ExMachina](https://github.com/ExMachina-Project/DSH-ExMachina)** |
-| :-- | :-- | :-- |
-| 以集体智能与集群协作为核心的智能体系统。<br><br>`RUST` `TAURI` `40 AGENTS` | 理性协议压成纯提示词，九平台即插即用。<br><br>`PROMPT ONLY` `28 ROLES` `9 PLATFORMS` | DSH 预设：指挥体编排，子代理执行。<br><br>`PRESET` `6 SKILLS` |
+| <sub>01</sub> **[ExMachina](https://github.com/ExMachina-Project/ExMachina)** | <sub>02</sub> **[ExM-WebSite](https://github.com/ExMachina-Project/ExM-WebSite)** |
+| :-- | :-- |
+| 以集体智能与集群协作为核心的智能体系统。<br><br>`RUST` `TAURI` `40 AGENTS` | ExMachina 的官方网站。<br>[exmachina-project.pages.dev](https://exmachina-project.pages.dev/)<br><br>`TYPESCRIPT` `CLOUDFLARE PAGES` |
 
 ## 数据
 
