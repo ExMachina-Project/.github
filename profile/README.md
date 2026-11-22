@@ -16,7 +16,7 @@
 
 | <sub>01</sub> **[ExMachina](https://github.com/ExMachina-Project/ExMachina)** | <sub>02</sub> **[ExM-WebSite](https://github.com/ExMachina-Project/ExM-WebSite)** | <sub>03</sub> **[ExM-Code](https://github.com/ExMachina-Project/ExM-Code)** |
 | :-- | :-- | :-- |
-| 以集体智能与集群协作为核心的智能体系统。<br><br>`RUST` `TAURI` `40 AGENTS` | ExMachina 的官方网站。<br>[exmachina-project.pages.dev](https://exmachina-project.pages.dev/)<br><br>`TYPESCRIPT` `CLOUDFLARE PAGES` | ExMachina 的编程向延伸：Goal / Spec / Plan / Code 工作流，同一 Runtime 驱动桌面、移动与 Web 客户端。<br><br>`RUST` `REACT 19` `TAURI` |
+| 以集体智能与集群协作为核心的智能体系统，基于 Rust 构建。<br><br>`RUST` `TAURI` `40 AGENTS` | ExMachina 的官方网站与项目门户，[在线访问 →](https://exmachina-project.pages.dev/)。<br><br>`TYPESCRIPT` `CLOUDFLARE` | ExMachina 的编程向延伸，四段式 AI 编程工作流。<br><br>`RUST` `REACT 19` `TAURI` |
 
 ## 数据
 
